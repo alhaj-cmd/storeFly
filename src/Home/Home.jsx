@@ -12,6 +12,7 @@ const menuItems = [
 ];
 
 const Home = () => {
+    const [open, setOpen]= useState(false);
 
     return (
         <nav className="px-5 py-3 shadow-md">
