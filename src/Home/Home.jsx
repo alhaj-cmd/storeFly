@@ -41,9 +41,9 @@ const Home = () => {
 
       {/* Mobile Menu */}
       {open && (
-        <ul className="md:hidden mt-3 rounded shadow">
+        <ul className="md:hidden mt-3 rounded bg-red-700  duration-1000">
           {menuItems.map(route => (
-            <Link key={route.id} route={route} />
+            <Link className={`${open ? 'top-40':'-top-80'}`} key={route.id} route={route} />
           ))}
         </ul>
       )}
